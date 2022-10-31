@@ -276,7 +276,9 @@ footer {
 }
 
 
-
+footer span:first-child{
+    display:block;
+}
 
 
 
@@ -368,6 +370,15 @@ footer {
 
     .second-level-stories ol h5 {
         padding-block:0 .75rem;
+    }
+
+
+    footer span:first-child{
+        display:inline-block;
+    }
+
+    footer a {
+        color: var(--dark-blue);
     }
 
 }
