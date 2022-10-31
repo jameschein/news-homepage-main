@@ -162,7 +162,7 @@ picture img {
 h2 {
     font-size:2.9rem;
     font-weight: 900;    
-    line-height: 1;
+    line-height: 1.125;
     font-weight: var(--extra);
     color:black;
     padding-block:1rem;
@@ -337,6 +337,11 @@ footer a:hover {
         "footer footer";
         grid-template-columns: 66% auto;
     }
+
+    h2 {
+        line-height: 1;
+    }
+    
 
     .feature-story {
         display: grid;
