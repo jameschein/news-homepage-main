@@ -214,7 +214,7 @@ a:hover {
     height:inherit;
     padding:1.25rem 2.5rem;
     background-color: #F25D52;
-    transition:background-color 250ms;
+    
 }
 
 .read-more a:hover {
@@ -373,7 +373,7 @@ footer {
 
 
 
-@font-face {
+/* @font-face {
     font-family: Inter;
     src: url(assets/fonts/static/Inter-Regular.ttf);
     font-display: swap;
@@ -389,4 +389,4 @@ footer {
     font-family: Inter-ExtraBold;
     src: url(assets/fonts/static/Inter-ExtraBold.ttf);
     font-display: swap;
-}
+} */
