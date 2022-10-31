@@ -205,16 +205,16 @@ a:hover {
 }
 
 .read-more a:link, .read-more a:visited  {
-    display:block;
+    display:inline-block;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: var(--bold);
     color:white;
     font-size:.9rem;
-    width:inherit;
     height:inherit;
     padding:1.25rem 2.5rem;
     background-color: #F25D52;
+    transition:background-color 250ms;
 }
 
 .read-more a:hover {
