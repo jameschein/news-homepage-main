@@ -13,9 +13,9 @@
     --body-text: #6C6A74; 
     --light-text: #B3B4C5;
     --header-text: #999;
-    --regular: Inter, sans-serif; 
-    --bold: Inter-Bold, sans-serif; 
-    --extra: Inter-ExtraBold, sans-serif; 
+    --regular: "Inter", sans-serif; 
+    --bold: 700; 
+    --extra: 800; 
     
 }
 
@@ -129,7 +129,7 @@ h2 {
     font-size:2.9rem;
     font-weight: 900;    
     line-height: 1;
-    font-family: var(--extra);
+    font-weight: var(--extra);
     color:black;
     padding-block:1rem;
 }
@@ -138,14 +138,14 @@ h2 {
 h3 {
     color:#EAA953;
     font-size:2.25rem;
-    font-family: var(--bold);
+    font-weight: var(--bold);
     margin-block:0rem;
 }
 
 h4 {
     font-size: 2.25rem;
-    font-family: var(--bold);
     color: var(--light-text);
+    font-weight: var(--bold);
     padding-block: 0rem .25rem;
 }
 
@@ -157,7 +157,7 @@ h4.wob {
 h5 {
     font-size: 1.3rem;
     line-height: 1;
-    font-family: var(--bold);
+    font-weight: var(--bold);
     color: var(--dark-blue);
     padding-block:0 1rem;
 }
@@ -208,7 +208,7 @@ a:hover {
     display:inline-block;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: var(--bold);
+    font-weight: var(--bold);
     color:white;
     font-size:.9rem;
     height:inherit;
@@ -355,7 +355,7 @@ footer {
     h5 {
         font-size: 1.075rem;
         line-height: 1;
-        font-family: var(--extra);
+        font-weight: var(--extra);
         color: var(--dark-blue);
         padding-block:0 1rem;
     
