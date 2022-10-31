@@ -43,7 +43,7 @@ body {
     "newsinbrief"
     "seconds"
     "footer";
-    overflow-y:hidden ;
+    overflow-x:hidden ;
 }
 
 header {
