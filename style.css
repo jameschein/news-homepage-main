@@ -280,6 +280,14 @@ footer span:first-child{
     display:block;
 }
 
+footer a:link, footer a:visited {
+    color: var(--dark-blue);
+}
+
+footer a:hover {
+    color: var(--button-bgd);
+}
+
 
 
 @media only screen and (min-width:1024px)  {
@@ -377,9 +385,7 @@ footer span:first-child{
         display:inline-block;
     }
 
-    footer a {
-        color: var(--dark-blue);
-    }
+  
 
 }
 
