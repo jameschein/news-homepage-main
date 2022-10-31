@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
          
             // hide the menu
             mainNavbar.style.right = -100 + '%';
-            mainNavbar.style.transition = 'right 250ms';
+            mainNavbar.style.transition = 'right 500ms ease-out';
 
         } else {
             hamburger.classList.add('hamburger-show')
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             
             // show the menu
             mainNavbar.style.right = 0;
-            mainNavbar.style.transition = 'right 250ms';
+            mainNavbar.style.transition = 'right 500ms ease-out';
         }
 
         e.preventDefault();

@@ -14,6 +14,7 @@
     --light-text: #B3B4C5;
     --header-text: #B3B4C5;
     --button-bgd: #D1322F;
+    --hover: #F59F29;
     --regular: "Inter", sans-serif; 
     --bold: 700; 
     --extra: 800; 
@@ -51,7 +52,8 @@ body {
     "newsinbrief"
     "seconds"
     "footer";
-    overflow-x:hidden ;
+    overflow-x:hidden;
+    position: relative;
 }
 
 header {
@@ -77,42 +79,52 @@ aside {
 
 .hamburger {
     display: block;
-    max-width:60px;
-    max-height:30px;
+    max-width:50px;
+    max-height:20px;
     position: relative;
     z-index: 10;
+}
+
+.hamburger:focus {
+    background-color: transparent;
 }
 
 .hamburger img {
     object-fit:contain;
 }
 
-.hamburger-show img {
+/* .hamburger-show img {
     filter: invert();  
-}
+} */
 
 .main-navbar {
     display:flex;
-    background-color: var(--dark-blue);
+    background-color: white;
     flex-direction: column;
     position: absolute;
     top:0;
     right:-100%;
-    padding-inline:3rem 12rem;
-    padding-block:6rem 3rem;
-    height:100vw; 
+    padding-inline:2rem 12rem;
+    padding-block:12rem 3rem;
+    height:100vh; 
+    align-content: center;
 }
 
 
 .main-navbar a:link, .main-navbar a:visited  {
-    color: white;
-    padding-block:.5rem;
+    color: var(--dark-blue);
+    padding-block:0 2rem;
+    padding-inline: 1em;
+    height:15px;
+    line-height: 1;
 }
 
-.main-navbar a:hover  {
-    color: var(--light-text);
-    padding-block:.5rem;
+.main-navbar a:hover, .main-navbar a:focus   {
+    color: var(--hover);
+
 }
+
+
 
 
 
@@ -170,7 +182,7 @@ h2 {
 
 
 h3 {
-    color:#EAA953;
+    color: var(--hover);
     font-size:2.25rem;
     font-weight: var(--bold);
     margin-block:0rem;
@@ -202,7 +214,7 @@ aside p {
 }
 
 
-li:first-child {
+aside li:first-child {
     padding-block:1rem 2rem;
 }
 
@@ -212,21 +224,38 @@ aside li {
     border-bottom: 1px solid #6C6A74;
 }
 
-li:last-child {
-
-    border-bottom: none;
+.second-level-stories li a {
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem; 
 }
 
+
+li a:hover, li a:focus {
+    color: unset;
+
+}
+
+aside li a:hover h4, 
+aside li a:focus h4, 
+.second-level-stories a:hover h5, 
+.second-level-stories a:focus h5 {
+    color: var(--hover);
+    transition:color 250ms;
+}
+
+li:last-child {
+    border-bottom: none;
+}
 
 a:link, a:visited {
     outline: none;
     color: var(--body-text);
-    transition:color 250ms;
-    
+    transition:color 250ms;  
 }
 
-a:hover {
-    color: var(--dark-blue);
+a:hover, a:focus {
+    color: var(--hover);
     transition:color 250ms;
 }
 
@@ -251,7 +280,7 @@ a:hover {
     
 }
 
-.read-more a:hover {
+.read-more a:hover, .read-more a:focus {
     background-color: var(--dark-blue);
     transition:background-color 250ms;
 
@@ -263,41 +292,31 @@ a:hover {
     padding-block: 3rem;
 }
 
-.second-level-stories ol {
-    display: flex;
-    flex-direction: column;
-    gap:2rem;  
-}
-
 .second-level-stories .story {
+    margin-block:2rem; 
+} 
+
+.second-level-stories a {
     display: flex;
     gap:1.5rem;
-    flex-basis: 100%;
-    padding:0
+    padding:0;
+    margin:0;
 
 }
 
-
-.second-level-stories .story figure {
-height:auto;
-padding:0;   
-}
-
-.second-level-stories .story figure img {
-width: 111px;
+.second-level-stories img {
+width: 120px;
+height: 150px;
 object-fit: contain;
 }
 
-.second-level-stories ol h4 {
+.second-level-stories a h4 {
     line-height:1;
     color: var(--header-text);
     font-size: 2.125rem;
     letter-spacing: 1px;
     padding-block:0 1.2rem;
 }
-
-
-
 
 footer {
     grid-area: footer;
@@ -317,14 +336,13 @@ footer a:link, footer a:visited {
     color: var(--dark-blue);
 }
 
-footer a:hover {
-    color: var(--button-bgd);
+footer a:hover, footer a:focus {
+    color: var(--hover);
 }
 
 
 
 @media only screen and (min-width:1024px)  {
-
 
     .wrapper {
         width:80%;
@@ -338,9 +356,52 @@ footer a:hover {
         grid-template-columns: 66% auto;
     }
 
+
     h2 {
         line-height: 1;
     }
+
+    h4.wob {
+        font-size:1.25rem;
+    }
+
+    h5 {
+        font-size: 1.075rem;
+        line-height: 1;
+        font-weight: var(--extra);
+        color: var(--dark-blue);
+        padding-block:0 1rem;
+    
+    }
+
+
+    .hamburger {
+        display:none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        width:40%;
+        background-color: transparent;
+        flex-direction: row;
+        position: static;
+        padding:0;
+        height: unset;
+        
+    }
+
+    .main-navbar a:link, .main-navbar a:visited  {
+        color: var(--body-text);
+        padding-block:.5rem;
+    }
+    
+    .main-navbar a:hover, .main-navbar a:focus {
+        color: var(--hover);
+        padding-block:.5rem;
+    }
+    
+
     
 
     .feature-story {
@@ -373,75 +434,31 @@ footer a:hover {
     }
 
 
-
-    .hamburger {
-        display:none;
-    }
-
-    .main-navbar {
-        display: flex;
-        justify-content: space-between;
-        width:40%;
-        background-color: transparent;
-        flex-direction: row;
-        position: static;
-        padding:0;
-        height: unset;
-        
-    }
-
-    .main-navbar a:link, .main-navbar a:visited  {
-        color: var(--body-text);
-        padding-block:.5rem;
-    }
-    
-    .main-navbar a:hover  {
-        color: var(--dark-blue);
-        padding-block:.5rem;
-    }
-    
-
-
-
-
     .second-level-stories ol {
         display: flex;
-        flex-direction: row;
-        gap:2rem;  
+        flex: 0 1 auto;
+        gap:1.5rem;
     }
 
-    .second-level-stories .story figure img {
-        width: 102px;
-        object-fit: contain;
+    .second-level-stories ol > * {
+        flex-basis: 100%;
+      }
+
+      .second-level-stories a {
+        display: flex;
+        font-size: .9rem;
     }
 
-    h4.wob {
-        font-size:1.25rem;
+    .second-level-stories a img {
+        width:112px;
     }
 
-    h5 {
-        font-size: 1.075rem;
-        line-height: 1;
-        font-weight: var(--extra);
-        color: var(--dark-blue);
-        padding-block:0 1rem;
     
-    }
-
-    .second-level-stories ol h4 {
-        padding-block:0 .75rem;
-    }
-
-    .second-level-stories ol h5 {
-        padding-block:0 .75rem;
-    }
-
+ 
 
     footer span:first-child{
         display:inline-block;
     }
-
-  
 
 }
 
