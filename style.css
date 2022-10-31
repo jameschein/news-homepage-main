@@ -206,6 +206,7 @@ h5 {
     font-weight: var(--bold);
     color: var(--dark-blue);
     padding-block:0 1rem;
+    white-space: nowrap;
 }
 
 aside p {
