@@ -11,7 +11,7 @@
     --bgd:#FEFDF9;
     --dark-blue: #00011A;  
     --body-text: #6C6A74; 
-    --light-text: #AAABBE;
+    --light-text: #999;
     --header-text: #C4C5CA;
     --regular: Inter, sans-serif; 
     --bold: Inter-Bold, sans-serif; 
@@ -180,6 +180,7 @@ a:link, a:visited {
     outline: none;
     color: var(--body-text);
     transition:color 250ms;
+    
 }
 
 a:hover {
@@ -189,7 +190,6 @@ a:hover {
 
 
 button {
-    background-color: #F25D52;
     border:none;
     margin-block:1.75rem 3rem; 
     transition:background-color 250ms;
@@ -206,6 +206,7 @@ button a:link, button a:visited  {
     width:inherit;
     height:inherit;
     padding:1.25rem 2.5rem;
+    background-color: #F25D52;
 }
 
 button a:hover {
