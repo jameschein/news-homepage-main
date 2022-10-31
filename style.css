@@ -12,7 +12,7 @@
     --dark-blue: #00011A;  
     --body-text: #6C6A74; 
     --light-text: #B3B4C5;
-    --header-text: #666;
+    --header-text: #B3B4C5;
     --button-bgd: #D1322F;
     --regular: "Inter", sans-serif; 
     --bold: 700; 
@@ -21,16 +21,13 @@
 }
 
 
-.read-more span {
-    display:block;
-    width:100px;
-    line-height:0px;
-    text-indent: 9999px;
-    white-space: nowrap;
-    overflow: hidden;
-    background-color: transparent;
+path.bgd {
+    opacity:1;
 }
 
+path.bars {
+    opacity:0.5;
+}
 
 body {
     margin:0 auto;
@@ -79,18 +76,18 @@ aside {
 
 
 .hamburger {
-    width:12%;
-    height:100%;
+    display: block;
+    max-width:60px;
+    max-height:30px;
     position: relative;
-    z-index: 10;   
+    z-index: 10;
 }
 
 .hamburger img {
-    width:100%;
-    object-fit: contain;
+    object-fit:contain;
 }
 
-.hamburger-show {
+.hamburger-show img {
     filter: invert();  
 }
 
@@ -140,7 +137,10 @@ picture img {
 
 .feature-copy {
     padding-inline:0 1rem;
+    line-height: 1.6;
+
 }
+
 
 .logo {
     background-image: url(assets/images/logo.svg);
@@ -241,12 +241,12 @@ a:hover {
 .read-more a:link, .read-more a:visited  {
     display:inline-block;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: .33rem;
     font-weight: var(--bold);
     color:white;
-    font-size:.9rem;
+    font-size:.85rem;
     height:inherit;
-    padding:1.25rem 2.5rem;
+    padding:1rem 2.25rem;
     background-color: var(--button-bgd);
     
 }
@@ -381,7 +381,7 @@ footer a:hover {
     .main-navbar {
         display: flex;
         justify-content: space-between;
-        width:48%;
+        width:40%;
         background-color: transparent;
         flex-direction: row;
         position: static;
