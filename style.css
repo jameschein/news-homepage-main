@@ -42,7 +42,8 @@ body {
     "feature"
     "newsinbrief"
     "seconds"
-    "footer"
+    "footer";
+    overflow-y:hidden ;
 }
 
 header {
