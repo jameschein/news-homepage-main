@@ -12,7 +12,8 @@
     --dark-blue: #00011A;  
     --body-text: #6C6A74; 
     --light-text: #B3B4C5;
-    --header-text: #999;
+    --header-text: #666;
+    --button-bgd: #D1322F;
     --regular: "Inter", sans-serif; 
     --bold: 700; 
     --extra: 800; 
@@ -213,7 +214,7 @@ a:hover {
     font-size:.9rem;
     height:inherit;
     padding:1.25rem 2.5rem;
-    background-color: #C33407;
+    background-color: var(--button-bgd);
     
 }
 
