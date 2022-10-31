@@ -21,6 +21,8 @@
 
 
 
+
+
 body {
     margin:0 auto;
     padding:2rem 1rem;
@@ -113,9 +115,7 @@ picture img {
 }
 
 
-a {
-    color: var(--body-text);
-}
+
 
 h2 {
     font-size:2.9rem;
@@ -176,20 +176,42 @@ li:last-child {
 }
 
 
+a:link, a:visited {
+    outline: none;
+    color: var(--body-text);
+    transition:color 250ms;
+}
+
+a:hover {
+    color: var(--dark-blue);
+    transition:color 250ms;
+}
+
+
 button {
     background-color: #F25D52;
     border:none;
-    padding:1.25rem 2.5rem;
     margin-block:1.75rem 3rem; 
+    transition:background-color 250ms;
 
 }
 
-button a {
+button a:link, button a:visited  {
+    display:block;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: var(--bold);
     color:white;
     font-size:.9rem;
+    width:inherit;
+    height:inherit;
+    padding:1.25rem 2.5rem;
+}
+
+button a:hover {
+    background-color: var(--dark-blue);
+    transition:background-color 250ms;
+
 }
 
 
@@ -237,6 +259,9 @@ object-fit: contain;
 footer {
     grid-area: footer;
     border-top: 1px solid var(--body-text);
+    font-size:.9rem;
+    text-transform: uppercase;
+    padding-block:1rem;
 
 }
 
