@@ -241,7 +241,7 @@ a:hover {
 .read-more a:link, .read-more a:visited  {
     display:inline-block;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: var(--bold);
     color:white;
     font-size:.9rem;
@@ -367,19 +367,37 @@ footer a:hover {
         padding:0;
     }
 
-   
-
-    .main-navbar {
-        display: flex;
-        justify-content: space-between;
-        width:48%;
-        
-    }
 
 
     .hamburger {
         display:none;
     }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        width:48%;
+        background-color: transparent;
+        flex-direction: row;
+        position: static;
+        padding:0;
+        height: unset;
+        
+    }
+
+    .main-navbar a:link, .main-navbar a:visited  {
+        color: var(--body-text);
+        padding-block:.5rem;
+    }
+    
+    .main-navbar a:hover  {
+        color: var(--dark-blue);
+        padding-block:.5rem;
+    }
+    
+
+
+
 
     .second-level-stories ol {
         display: flex;
