@@ -343,22 +343,22 @@ footer {
         font-size:1.25rem;
     }
 
-        h5 {
-            font-size: 1.125rem;
-            line-height: 1;
-            font-family: var(--extra);
-            color: var(--dark-blue);
-            padding-block:0 1rem;
-        }
+    h5 {
+        font-size: 1.075rem;
+        line-height: 1;
+        font-family: var(--extra);
+        color: var(--dark-blue);
+        padding-block:0 1rem;
+    
+    }
 
-        .second-level-stories ol h4 {
-            padding-block:0 .75rem;
-        }
+    .second-level-stories ol h4 {
+        padding-block:0 .75rem;
+    }
 
-        .second-level-stories ol h5 {
-            padding-block:0 .75rem;
-        }
-        
+    .second-level-stories ol h5 {
+        padding-block:0 .75rem;
+    }
 
 }
 
