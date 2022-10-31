@@ -20,7 +20,15 @@
 }
 
 
-
+.read-more span {
+    display:block;
+    width:100px;
+    line-height:0px;
+    text-indent: 9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+}
 
 
 body {
@@ -63,7 +71,7 @@ main {
 aside {
     padding:1rem 1.5rem 0rem ;
     grid-area: newsinbrief;
-    background-color: #00011A;
+    background-color: var(--dark-blue);
 
 }
 
@@ -189,14 +197,14 @@ a:hover {
 }
 
 
-button {
+.read-more {
     border:none;
     margin-block:1.75rem 3rem; 
     transition:background-color 250ms;
 
 }
 
-button a:link, button a:visited  {
+.read-more a:link, .read-more a:visited  {
     display:block;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -209,7 +217,7 @@ button a:link, button a:visited  {
     background-color: #F25D52;
 }
 
-button a:hover {
+.read-more a:hover {
     background-color: var(--dark-blue);
     transition:background-color 250ms;
 
