@@ -313,6 +313,10 @@ footer {
         object-fit: contain;
     }
 
+    h4.wob {
+        font-size:1.25rem;
+    }
+
         h5 {
             font-size: 1.125rem;
             line-height: 1;
