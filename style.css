@@ -202,7 +202,7 @@ h4.wob {
 
 h5 {
     font-size: 1.3rem;
-    line-height: 1;
+    line-height: 1.125;
     font-weight: var(--bold);
     color: var(--dark-blue);
     padding-block:0 1rem;
