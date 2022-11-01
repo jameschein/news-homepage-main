@@ -121,7 +121,6 @@ aside {
 
 
 picture {
-    display: block;
     width:100%;
 }
 
@@ -152,7 +151,8 @@ picture img {
 .logo span {
     display: block;
     text-indent: 9999px;
-    white-space: no-wrap;  
+    white-space: no-wrap; 
+    overflow: hidden; 
 }
 
 
@@ -337,21 +337,22 @@ footer a:hover, footer a:focus {
 
 
 
-@media only screen and (min-width:1023px)  {
+@media only screen and (min-width:960px)  {
 
     aside li:last-child {
-        padding-block:2rem 0;
+        padding-block:2rem;
         border-bottom: none;
     }
 
     body { 
-        padding:5rem 1rem 1rem;
+        padding-block:5rem 1rem;
     }
 
     .wrapper {
-        width:80%;
+        position: relative;
+        width:90%;
         margin:0 auto;
-        overflow-x:hidden ;
+        overflow-x:visible;
     }
     
 
@@ -366,14 +367,14 @@ footer a:hover, footer a:focus {
         display:grid;
         grid-template-areas: 
         "featurestory newsinbrief"
-        "seconds seconds"
-        ". .";
-        grid-template-columns: 66% auto;
-        
+        "seconds seconds";
+        grid-template-columns: 60% 1fr;
         gap:1.75rem;
     }
     
-
+    picture img {
+        height:100%;
+    }
 
     h2 {
         line-height: 1;
@@ -418,9 +419,6 @@ footer a:hover, footer a:focus {
         padding-block:.5rem;
     }
     
-
-    
-
     .feature-story {
         display: grid;
         grid-template-areas: 
@@ -441,7 +439,7 @@ footer a:hover, footer a:focus {
     }
 
     .feature-story .feature-header {
-        font-size:3.3rem;    
+        font-size:3.2rem;    
     }
 
     .feature-story .feature-copy {
@@ -457,24 +455,27 @@ footer a:hover, footer a:focus {
     
     }
 
-
-
     .second-level-stories {
         grid-area: seconds;
         padding-block: 0 3rem;
     }
 
+    .second-level-stories .story {
+        margin-block: 2rem 0;
+    }
+
     .second-level-stories ol {
         display: flex;
         flex: 0 1 auto;
-        gap:1.5rem;
+        gap: 0rem 1.5rem;
+      
     }
 
     .second-level-stories ol > * {
         flex-basis: 100%;
       }
 
-      .second-level-stories a {
+    .second-level-stories a {
         display: flex;
         font-size: .9rem;
     }
@@ -490,9 +491,31 @@ footer a:hover, footer a:focus {
         display:inline-block;
     }
 
+    .second-level-stories a {
+        flex-wrap:wrap;
+    }
+
 }
 
+@media only screen and (min-width:1200px)  {
+    .wrapper {
+        width:80%;
+    }
 
+    main {
+        grid-template-columns: 66% 1fr;
+    }
+
+    .feature-story .feature-header {
+        font-size: 3.75rem;
+    }
+
+    .second-level-stories a {
+        flex-wrap:nowrap;
+    }
+
+    
+}
 
 /* @font-face {
     font-family: Inter;
