@@ -30,8 +30,8 @@
   <header>
      <h1 class="logo"><span>logo</span></h1>
 
-     <a class="hamburger" href="index.html" aria-label="Mobile menu">
-      <img src="assets/images/icon-menu.svg" alt="Hamburger Menu Icon" aria-hidden="true" width=60 height=36></a>
+     <button class="hamburger" aria-label="Mobile menu">
+      <img src="assets/images/icon-menu.svg" alt="Hamburger Menu Icon" aria-hidden="true" width=60 height=36></button>
       
      <nav class="main-navbar">
         <a href="index.html">Home</a>
@@ -39,34 +39,30 @@
         <a href="index.html">Popular</a>
         <a href="index.html">Trending</a>
         <a href="index.html">Categories</a>
-     </nav>
-
-
-  </header>
+     </nav></header>
   
   <!-- main section takes the web3 img as a css bgd-->
   <main>
-    
-    <section class="feature-story">
-
-      <picture class="feature-image" aria-hidden="true">
+      <section class="feature-story">
+         
+          <picture class="feature-image">
           <source media="(min-width:600px)" srcset="assets/images/image-web-3-desktop.webp">
           <source media="(min-width:320px)" srcset="assets/images/image-web-3-mobile.webp">
-          <img fetchpriority="high" src="assets/images/image-web-3-mobile.webp" alt="Featured Image" width=696 height=295 ></picture> 
+          <img src="assets/images/image-web-3-mobile.webp" alt="" width=696 height=295 ></picture> 
   
-      <div class="feature-header">
-        <h2 class="headline">The Bright Future of Web 3.0?</h2>
-      </div>
+          <article class="feature-header">
+            <h2 class="headline">The Bright Future of Web 3.0?</h2>
+          </article>
         
-      <div class="feature-copy">
-          <p>
+          <article class="feature-copy">
+            <p>
               We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
 
-          <p class="read-more"><a href="index.html" aria-label="Read more about Web 3.0.">read more</a></p>
-      </div>
+              <p class="read-more"><a href="index.html" aria-label="Read more about Web 3.0.">read more</a></p>
+          </article>
      
-    </section>
-  </main>
+      </section>
+  
   
     <aside class="news-in-brief">
       <h3>New</h3> 
@@ -101,38 +97,40 @@
           <a href="index.html">
             <figure>
               <img src="assets/images/image-retro-pcs.webp" width="120" height="140" alt="Reviving Retro PCs" aria-hidden="true" class="storyimg"></figure>
-            <div>
+            <article>
               <h4>01</h4>
               <h5>Reviving Retro PCs</h5>
               <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
+            </article>
           </a>
         </li>
         <li class="story">
           <a href="index.html">
             <figure>
               <img src="assets/images/image-top-laptops.webp" width="120" height="140" alt="Top Laptops" aria-hidden="true" class="storyimg"></figure>
-            <div>
+            <article>
               <h4>02</h4>
               <h5>Top 10 Laptops of 2022</h5>
               <p>Our best picks for various needs and budgets.</p>
-            </div>
+            </article>
           </a>
         </li>
         <li class="story">
           <a href="index.html">
             <figure>
               <img src="assets/images/image-gaming-growth.webp" width="120" height="140" alt="Gaming Growth" aria-hidden="true" class="storyimg"></figure>
-            <div>
+            <article>
               <h4>03</h4>
               <h5>The Growth of Gaming</h5>
               <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
+            </article>
           </a>
         </li>
 
       </ol>
    </section>
+   
+  </main>
     
   <footer>
       <div class="attribution">
