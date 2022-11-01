@@ -74,7 +74,7 @@ aside {
 .hamburger {
     display: block;
     max-width:50px;
-    max-height:20px;
+    max-height:30px;
     position: relative;
     z-index: 10;
 }
